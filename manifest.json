@@ -1,0 +1,30 @@
+{
+  "name": "The Bouncing DVD Tab",
+  "version": "1.0",
+  "description": " Replace your boring 'new tab' screen and watch the bouncing DVD logo hit the corner of the internet ! ;-)  ",
+  "short_name": "bouncing-dvd",
+  "permissions": [ "storage"],
+  "background": {
+    "scripts": ["js/popup.js", "js/materialize.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "newTab.html"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/dvd_icon_16.png",
+      "32": "images/dvd_icon_32.png",
+      "48": "images/dvd_icon_48.png",
+      "128": "images/dvd_icon_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/dvd_icon_16.png",
+    "32": "images/dvd_icon_32.png",
+    "48": "images/dvd_icon_48.png",
+    "128": "images/dvd_icon_128.png"
+  },
+  "manifest_version": 2
+}
